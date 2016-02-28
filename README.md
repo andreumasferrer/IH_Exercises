@@ -44,7 +44,7 @@ The Game of Life (an example of a cellular automaton) is played on a two-dimensi
 ## Tweeter Clone 
 > Week 03: HTML/CSS, Sass, JQuery & Javascript
 
-This exercise was to clone the Twitter homepage as closely as possible. This exercise helped me to practice structuring, styling and making the layout of a web page. [See more](http://https://github.com/andreumasferrer/IH_Exercises/tree/master/03_TwitterClone) 
+This exercise was to clone the Twitter homepage as closely as possible. This exercise helped me to practice structuring, styling and making the layout of a web page. [See more](https://github.com/andreumasferrer/IH_Exercises/tree/master/03_TwitterClone) 
 
 <p align="center">
 		<img src="http://i63.tinypic.com/j0xgz5.jpg">
