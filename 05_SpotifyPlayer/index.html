@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Spotify Player
+				<small>Search & play your favorite songs</small>
+			</h1>
+		</div>
+		<div class="row">
+			<div id="search-panel" class="col-md-8">
+				<form id="search-form" class="form-inline" role="form">
+					<!--div class="form-group"-->
+					<input id="search-input" class="form-control" type="search" placeholder="Song name...">
+					<!--/div-->
+					<button type="submit" class="btn btn-default">Search</button>
+				</form>
+
+				<div id="tracks-list" class="list-group" hidden>
+
+				</div>
+
+			</div>
+			<div class="widget col-md-4 well" hidden>
+				<div class="header">
+
+					<div class="btn-play disabled"></div>
+
+					<div class="metadata">
+						<p class="title">Hunger of The Pine</p>
+						<p class="author">alt-J</p>
+
+						<div class="seekbar">
+							<progress value="0" max="30"></progress>
+						</div>
+					</div>
+				</div>
+				<div class="cover">
+					<img src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+				</div>
+
+				<audio src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+			</div>
+		</div>
+	</div>
+
+	<!-- Artist Modal -->
+	<div class="modal fade artist-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- Close button -->
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span>&times;</span>
+					</button>
+					<h2 id="artist-header">This is the modal's header.</h2>
+				</div>
+				<div class="modal-body">
+					<p id="artist-body">This is the modal's body.</p>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>

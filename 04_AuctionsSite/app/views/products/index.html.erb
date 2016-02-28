@@ -1,0 +1,19 @@
+
+<h1>All products list </h1>
+<%= link_to "Home page", root_path %>
+<% if current_user.present? %>
+  | <%= link_to "Create new product", new_product_path %>
+<% end %>
+<ul>
+  <% @products.each do |product| %>
+    <li>
+      <strong><%= link_to product.title, product_path(product.id)  %></strong>
+      <% if current_user && (current_user.id == product.user.id)%>
+        <%= link_to "Delete", product_path(product.id), method: :delete, data: { confirm: "Are you sure?" } %>
+      <% end %>
+      <% if product.description.present? %>
+        <p><em> <%= product.description %> </em></p>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

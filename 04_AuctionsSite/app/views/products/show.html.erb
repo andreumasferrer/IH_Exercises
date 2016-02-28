@@ -1,0 +1,79 @@
+<h1>Product details for:
+  <em>
+    <%= @product.title %></em>
+</h1>
+<%= link_to "All products", products_path %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+<p>
+  <strong>Bidding deadline:</strong>
+  <%= @product.bidding_deadline %>
+</p>
+<p>
+  <strong>Minimum_bid:</strong>
+  <%= @product.minimum_bid %>
+</p>
+
+<!-- TO DO: Refactor using partials-->
+<br>
+<div>
+  <h3>Bids for this product</h3>
+  <ul>
+    <% @product.bids.all.each do |bid| %>
+    <li>
+      <%= bid.user.name %>-
+      <strong><%= bid.amount %>€</strong>
+    </li>
+    <% end %>
+  </ul>
+</div>
+
+<br>
+<div>
+  <% if (Date.current < (@product.bidding_deadline || Date.current+1)) %>
+  <% if current_user.present? %>
+  <h4>Your bid!</h4>
+  <%= render 'products/new_bid_form', product: @product, bid: @bid%>
+  <% else %>
+  <p><%= link_to "Login", login_path %>
+    to make you bid.</p>
+  <% end %>
+  <% else %>
+  <strong>Winner bid:</strong>
+  <% bid = @product.highest_bid %>
+  <%= bid.user.name %>-
+  <strong><%= bid.amount %>€</strong>
+  <% end %>
+
+  <div>
+    <h3>Reviews for this product</h3>
+    <ul>
+      <% @product.reviews.all.each do |review| %>
+      <li>
+        <%= review.user.name %>-
+        <strong><%= review.description %></strong>
+        <% if current_user.present? &&  (current_user.id == review.user.id)%>
+          <%= link_to "Edit", edit_product_review_path(@product.id,review.id)%>
+          <%= link_to "Delete", product_review_path(@product.id,review.id), method: :delete, data: { confirm: "Are you sure?" } %>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+
+  <% if current_user.present? %>
+  <h4>Your review!</h4>
+  <%= render 'products/new_review_form', product: @product, review: @product.reviews.new%>
+  <% else %>
+  <p><%= link_to "Login", login_path %>
+    to make your review.</p>
+  <% end %>
+
+</div>

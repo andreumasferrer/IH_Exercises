@@ -1,0 +1,16 @@
+<%= form_for([product,bid]) do |f| %>
+
+  <%= render 'layouts/errors', model: bid %>
+
+  <input type="hidden" name="product_id" value="<%=product.id%>">
+
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.number_field :amount %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

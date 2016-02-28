@@ -1,0 +1,87 @@
+{
+  "game_name" : "Dark Castle Adventures",
+  "rooms": {
+    "outside_castle": {
+      "name": "Door to the castle",
+      "description": "You are in front of a big castle. The princess must be somewhere inside.",
+      "exits": {
+        "north": "corridor"
+      },
+      "items": []
+    },
+    "corridor": {
+      "name": "Long Corridor",
+      "description": "You are in a long a quiet corridor... ",
+      "exits": {
+        "south": "outside_castle",
+        "north": "hall"
+      },
+      "items": []
+    },
+    "hall": {
+      "name": "The Hall",
+      "description": "You are in the main hall. Ther are many doors here. It's getting dangerous, all kinds of dangers could be behind them ",
+      "exits": {
+        "south": "corridor",
+        "east" : "armory",
+        "west" : "dragon_cave",
+        "north": "north_chamber"
+      },
+      "items": []
+    },
+    "armory": {
+      "name": "The Armory",
+      "description": "You are in the armory. But It's weird... there aren't any swords here!",
+      "exits": {
+        "west": "hall"
+      },
+      "items": ["shield","bow"]
+    },
+    "dragon_cave": {
+      "name": "Dragon's cave",
+      "description": "This is a dark place and it smells like hell. Oh my! It's full of burned bones!",
+      "exits": {
+        "east": "hall"
+      },
+      "items": ["sword"],
+      "enemy": "dragon"
+    },
+    "north_chamber": {
+      "name": "North Chamber",
+      "description": "Another room in this castle. Wait! See those stairs an north? Seems like an entrance to the dungeons... The princess might be there!",
+      "exits": {
+        "north": "dungeon",
+        "south": "hall"
+      },
+      "items": ["bombs"],
+      "enemy": "guardian"
+    },
+    "dungeon": {
+      "name": "The dungeon",
+      "description": "The princess is here!! She is in danger! Go and save her!!",
+      "exits": {
+        "north": "dungeons",
+        "south": "hall"
+      },
+      "items": [],
+      "enemy": "final_boss"
+    }
+  },
+  "enemies" : {
+     "dragon": {
+       "description" : "Hey! Look at that nice sword next to that burned body... But... Holy shit!!! There is a dragon in here!. If I get closer I'll end up burned aswell! I need a weapon I can use from a certain distance.",
+       "killed_by" : "bow"
+     },
+     "guardian": {
+       "description" : "Ups! There is a guardian in this room. He doen't look very friendly. \nGUARDIAN: What are you doing here! Go away! My boss is busy right now. No visitors alowed!\" \n Looks like a well trained soldier... You will courage and a good sword to defeat him.",
+       "killed_by" : "sword"
+     },
+     "final_boss": {
+       "description" : "There is a big monster holding the princess. \nFINAL BOSS: \"Oh! The princess is mine! Don't you dare to fight against me with that little sword! I will destroy you in an eye blink!\". \nPRINCESS: \"HEEEELP ME!!!\" \n He is right, a sword is not enough to beat him. His body is made of rock, you will need a powerful weapon to kill him",
+       "killed_by" : "bombs"
+     }
+  },
+  "winning_room" : "dungeon",
+  "winning_message" : "CONGRATULATIONS!\nYou are a hero! You rescued the princess!"
+
+}

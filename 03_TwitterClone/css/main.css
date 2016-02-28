@@ -1,0 +1,297 @@
+/* BASE STYLES */
+body {
+  background-color: #f5f8fa;
+}
+a {
+  color: #009999
+}
+
+/* COMMON STYLES */
+.glyphicon {
+  color: #8899a6;
+  font-size: 13px:
+}
+
+.lighttext{
+  color: #66757f;
+}
+
+.coloredtext{
+  color: #66757f;
+}
+
+.avatar {
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.contentbox{
+  background-color: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+}
+
+/* SPECIFIC STYLES  */
+.topbar {
+  z-index: 99;
+  position: fixed;
+  height: 46px;
+  width: 100%;
+  min-width: 1028px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.navlistitem {
+  display: inline-block;
+  height: 45px;
+  padding: 0 14px 0 4px;
+  line-height: 45px;
+}
+.navlistitem .glyphicon {
+  vertical-align: middle;
+  font-size: 18px;
+}
+.navlistitem>a {
+  margin-left: 3px;
+  vertical-align: middle;
+  font-weight: 500;
+}
+.navbrand {
+  padding-top: 12px;
+}
+.nav-search {
+  display: inline-block;
+  position: relative;
+  width: 221px;
+  margin-right: 15px;
+  padding-top: 7px;
+  font-size: 12px;
+}
+.search-input {
+  width: 100%;
+  padding: 8px 27px 6px 12px;
+  background-color: #f5f8fa;
+  border: 1px solid #e1e8ed;
+  border-radius: 21px;
+}
+
+.search-icon {
+  display: block;
+  position: absolute;
+  top: 19px;
+  right: -3px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.navavatar {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+.tweet-btn {
+  height: 32px;
+  margin-top: 7px;
+  margin-right: 0;
+  padding: 0 13px 0 14px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #009999;
+  background: rgba(0, 153, 153, .8);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.tweet-btn .glyphicon{
+  color: #fff;
+}
+.maincontent {
+  padding-top: 46px;
+}
+.profileimage {
+  height: 320px;
+  background-position: center center;
+  background-image: url("../images/1500x500.png");
+  background-size: cover;
+}
+.profilenavbar {
+  height: 60px;
+  min-width: 900px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e8ed;
+}
+.profilenav-list {
+  margin: 0;
+  padding: 0;
+  min-width: 477px;
+  list-style: none;
+}
+.profilenav-item {
+  display: inline-block;
+}
+.profilenav-stat {
+  display: block;
+  height: 60px;
+  line-height: 1;
+  padding: 14px 15px 7px;
+  border-bottom: 0 solid;
+}
+.is-active {
+  border-color: #009999;
+  border-bottom-width: 4px;
+  color: #292f33;
+}
+.profilenav-label {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+.profilenav-value {
+  display: block;
+  padding-top: 3px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.useractions {
+  padding: 12px 0;
+}
+.useractions .glyphicon-cog {
+  margin-right: 15px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.useractions .follow-btn {
+  padding: 9px 12px 9px 12px;
+  border: 1px solid #3b88c3;
+  color: #fff;
+  background-color: #1da1f2;
+  font-size: 14px;
+  font-weight: bold;
+}
+.profileside {
+  min-width: 260px;
+}
+.profileavatar {
+  position: relative;
+}
+.profileavatar>img {
+  position: absolute;
+  top: -180px;
+  left: 25px;
+  height: 210px;
+  width: 210px;
+  border: 5px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 1px rgba(136, 153, 166, 0.15);
+}
+.profileheadercard {
+  margin: 37px 0 25px 0;
+  padding: 0 0 0 30px;
+}
+.profileheadercard h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+.profileheadercard h2 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profileheadercard .tweet-btn {
+  width: 100%;
+  height: 44px;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.profileheadercard .tweet-btn .glyphicon {
+  color: #fff;
+}
+
+.profilecontenthead {
+  margin-top: 17px;
+  border-radius: 5px 5px 0 0;
+  border-bottom-style: none;
+}
+.profilehead-toogle {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.profilehead-toogleitem {
+  display: inline-block;
+  padding: 15px 15px 12px;
+  line-height: 1;
+  color: #009999;
+  font-size: 18px;
+  font-weight: 300;
+}
+.profilehead-toogleitem.is-active {
+  color: #292f33;
+  font-weight: 500;
+  text-decoration: none;
+}
+.profilecontent {
+  margin: 0;
+  padding: 9px 12px;
+  border-radius: 0 0 5px 5px;
+}
+
+.tweetavatar {
+  width: 48px;
+  height: 48px;
+  margin-right: 7px;
+}
+.tweetusername {
+  font-size: 13px;
+}
+.tweettext {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.tweetcontent {
+  padding-left: 55px;
+}
+.tweetimage {
+  width: 100%;
+  border-radius: 5px;
+}
+.sidebox {
+  margin-top: 17px;
+  padding: 15px;
+  font-size: 12px;
+}
+.sidebox-title {
+  display: inline-block;
+  margin: 0;
+  color: #66757f;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+}
+.usersummary {
+  margin-top: 18px;
+}
+
+.userfollowbtn {
+  margin-top: 3px;
+  margin-right: 9px;
+  padding: 3px 11px 5px;
+  color: #292f33;
+  font-size: 13px;
+  font-weight: bold;
+}
+.usersummary .glyphicon-user {
+  color: #1da1f2;
+}

@@ -1,0 +1,31 @@
+<h1>User details for:
+  <em>
+    <%= current_user.name %></em>
+</h1>
+<%= link_to "All products", products_path %>
+
+<p>
+  <strong>Name:</strong>
+  <%= current_user.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= current_user.email %>
+</p>
+
+<!-- TO DO: Refactor using partials-->
+<br>
+
+  <div>
+    <h3>Reviews for this user</h3>
+    <ul>
+      <% current_user.reviews.all.each do |review| %>
+      <li>
+        <%= review.product.title %>-
+        <strong><%= review.description %></strong>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+
+</div>

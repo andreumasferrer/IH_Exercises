@@ -1,0 +1,30 @@
+<h1>Review details for:
+  <em>
+    <%= @review.user.name %>-<%= @review.product.title %></em>
+</h1>
+<%= link_to "Back to product", product_path(@review.product) %>
+
+<p>
+  <strong>User:</strong>
+  <%= @review.user.name %>
+</p>
+<p>
+  <strong>Product:</strong>
+  <%= @review.product.title %>
+</p>
+
+<%= form_for([@review.product,@review]) do |f| %>
+  <%= render 'layouts/errors', model: @review %>
+
+  <input type="hidden" name="product_id" value="<%=@review.product.id%>">
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

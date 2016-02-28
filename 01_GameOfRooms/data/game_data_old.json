@@ -1,0 +1,45 @@
+{
+  "game_name" : "Dark Castle Adventures",
+  "rooms": {
+    "castle_entrance": {
+      "name": "Entrance to the castle",
+      "description": "You are in front of a big castle",
+      "exits": {
+        "north": "hall"
+      },
+      "items": ["sword"]
+    },
+    "hall": {
+      "name": "Hall",
+      "description": "You are in the castle hall",
+      "exits": {
+        "south": "castle_entrance",
+        "north": "corridor"
+      },
+      "items": ["bomb","shield"],
+      "enemy": "soldier"
+    },
+    "corridor": {
+      "name": "corridor",
+      "description": "You are in the corridor",
+      "exits": {
+        "south": "hall"
+      },
+      "items": [],
+      "enemy": "monster"
+    }
+  },
+  "enemies" : {
+     "soldier": {
+       "description" : "There is a soldier. You'l need a sword to kill him.",
+       "killed_by" : "sword"
+     },
+     "monster": {
+       "description" : "Ther is a monster. You'l need a bomb to kill it.",
+       "killed_by" : "bomb"
+     }
+  },
+  "winning_room" : "corridor",
+  "winning_message" : "CONGRATULATIONS!\nYou are a hero! You rescued the princess!"
+
+}

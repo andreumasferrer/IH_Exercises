@@ -1,0 +1,25 @@
+<h1>Login page</h1>
+
+<%= link_to "Home page", root_path %>
+
+<% if @user.present? %>
+	<p>Hi <%=@user.name%> - <%=@user.email%> !
+		<%= form_tag(authentication_path(@user.id), method: "delete") do%>
+	    <%= submit_tag("Logout") %>
+	  <% end %>
+  </p>
+
+
+<% else %>
+	<%= form_tag("/authentication", method: "post") do %>
+		<div class="field">
+		  <%= label_tag(:email, "Email") %>
+		  <%= text_field_tag(:email) %>
+		</div>
+		<div class="field">
+		  <%= label_tag(:password, "Password") %>
+		  <%= text_field_tag(:password) %>
+		</div>
+		<%= submit_tag("Login") %>
+	<% end %>
+<% end %>

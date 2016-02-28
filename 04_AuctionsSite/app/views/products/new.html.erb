@@ -1,0 +1,37 @@
+<h1>New Product</h1>
+
+<%= link_to "All products", products_path %>
+
+<%= form_for(@product) do |f| %>
+
+<%= render 'layouts/errors', model: @product %>
+
+<!-- <div class="field">
+  User email<input type="email" name="user_email">
+</div> -->
+
+<div class="field">
+	<%=f.label :title %>
+  <%=f.text_field :title %>
+</div>
+
+<div class="field">
+	<%=f.label :description %>
+  <%=f.text_area :description %>
+</div>
+
+<div class="field">
+	<%=f.label :bidding_deadline %>
+  <%=f.date_field :bidding_deadline %>
+</div>
+
+<div class="field">
+	<%=f.label :minimum_bid %>
+  <%=f.number_field :minimum_bid %>
+</div>
+
+<div class="actions">
+	<%=f.submit %>
+</div>
+
+<% end %>

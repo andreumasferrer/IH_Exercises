@@ -1,0 +1,16 @@
+<%= form_for([product,review]) do |f| %>
+
+  <%= render 'layouts/errors', model: review %>
+
+  <input type="hidden" name="product_id" value="<%=product.id%>">
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
