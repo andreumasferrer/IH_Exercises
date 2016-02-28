@@ -19,7 +19,7 @@ Each week of the course was focused on a different learning unit. In this repo, 
 ## Game of Rooms 
 > Week 01: Object-Oriented Programming in Ruby
 
-It is a game that is played in the terminal and prompts the user for input based on rooms available to navigate around with different actions available to perform in different rooms. The goal of this project was to practice object-oriented coding in Ruby. I tried to write clean code by aplying SOLID principles and by using some design patterns.[See more*](http://www.example.com) 
+It is a game that is played in the terminal and prompts the user for input based on rooms available to navigate around with different actions available to perform in different rooms. The goal of this project was to practice object-oriented coding in Ruby. I tried to write clean code by aplying SOLID principles and by using some design patterns.[See more](https://github.com/andreumasferrer/IH_Exercises/tree/master/01_GameOfRooms) 
 
 <p align="center">
 		<img src="http://i67.tinypic.com/bhmxp2.png">
@@ -31,7 +31,7 @@ It is a game that is played in the terminal and prompts the user for input based
 ## Conway's Game of Life
 > Week 02: Sinatra & TDD using RSpec
 
-The Game of Life (an example of a cellular automaton) is played on a two-dimensional rectangular grid of cells _([Check Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life))_. The purpose of this exercise was to learn RSpec and practice Test Driven Development (TDD) in Ruby. Also, I tried to apply good object-oriented practices. [See more*](http://www.example.com) 
+The Game of Life (an example of a cellular automaton) is played on a two-dimensional rectangular grid of cells _([Check Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life))_. The purpose of this exercise was to learn RSpec and practice Test Driven Development (TDD) in Ruby. Also, I tried to apply good object-oriented practices. [See more](https://github.com/andreumasferrer/IH_Exercises/tree/master/02_GameOfLife) 
 
 
 <p align="center">
@@ -44,7 +44,7 @@ The Game of Life (an example of a cellular automaton) is played on a two-dimensi
 ## Tweeter Clone 
 > Week 03: HTML/CSS, Sass, JQuery & Javascript
 
-This exercise was to clone the Twitter homepage as closely as possible. This exercise helped me to practice structuring, styling and making the layout of a web page. [See more](http://www.example.com) 
+This exercise was to clone the Twitter homepage as closely as possible. This exercise helped me to practice structuring, styling and making the layout of a web page. [See more](http://https://github.com/andreumasferrer/IH_Exercises/tree/master/03_TwitterClone) 
 
 <p align="center">
 		<img src="http://i63.tinypic.com/j0xgz5.jpg">
@@ -54,7 +54,7 @@ This exercise was to clone the Twitter homepage as closely as possible. This exe
 ## Auctions Site
 > Week 04: Ruby on Rails, MVC Architecture, Databases
 
-My first attempt at a Rails app. I made simple auction site where users can submit products to sell and other users can bid on them. At the deadline set by the seller, the buyer with the highest bid wins the item. The goal in this exercise was to practice basic CRUD operations and understanding how Rails work. [See more](http://www.example.com) 
+My first attempt at a Rails app. I made simple auction site where users can submit products to sell and other users can bid on them. At the deadline set by the seller, the buyer with the highest bid wins the item. The goal in this exercise was to practice basic CRUD operations and understanding how Rails work. [See more](https://github.com/andreumasferrer/IH_Exercises/tree/master/04_AuctionsSite) 
 
 
 <p align="center">
@@ -65,7 +65,7 @@ My first attempt at a Rails app. I made simple auction site where users can subm
 ## Spotify Player 
 > Week 05: Adanced Javascript, HTML5 APIs, Bootstrap & responsive design
 
-This exercise was about creating an audio player by using the Spotify public API. Although we worked on more complex projects that week, I particulary enjoyed this one that played audio on the browser. In this project I practiced with Javascript, AJAX requests, JQuery, CSS & Bootstrap. [See more](http://www.example.com) 
+This exercise was about creating an audio player by using the Spotify public API. Although we worked on more complex projects that week, I particulary enjoyed this one that played audio on the browser. In this project I practiced with Javascript, AJAX requests, JQuery, CSS & Bootstrap. [See more](https://github.com/andreumasferrer/IH_Exercises/tree/master/05_SpotifyPlayer) 
 
 
 <p align="center">
@@ -89,5 +89,5 @@ No favorite exercise for this week. We learned about useful tools for the final 
 
 
 
-_**"Plans and Friends"** was my final project. It is located in a separated Github repository._ [https://github.com/andreumasferrer/IH_Project](https://github.com/andreumasferrer/IH_Project#plands--friends)
+_**"Plans and Friends"** was my final project. It is located in a separated Github repository._ [https://github.com/andreumasferrer/IH_Project](https://github.com/andreumasferrer/IH_Project#plans--friends)
 
